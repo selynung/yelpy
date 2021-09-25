@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E4628BFD9869E73839284C5 /* Pods_yelpyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82216ADDCFF12EC9B85C7623 /* Pods_yelpyTests.framework */; };
+		57D5CB6526FF97DF00364AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB6426FF97DF00364AE2 /* AppDelegate.swift */; };
+		57D5CB6726FF97DF00364AE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB6626FF97DF00364AE2 /* SceneDelegate.swift */; };
+		57D5CB6926FF97DF00364AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB6826FF97DF00364AE2 /* ViewController.swift */; };
+		57D5CB6C26FF97DF00364AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D5CB6A26FF97DF00364AE2 /* Main.storyboard */; };
+		57D5CB6E26FF97E000364AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D5CB6D26FF97E000364AE2 /* Assets.xcassets */; };
+		57D5CB7126FF97E000364AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D5CB6F26FF97E000364AE2 /* LaunchScreen.storyboard */; };
+		57D5CB7C26FF97E000364AE2 /* yelpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB7B26FF97E000364AE2 /* yelpyTests.swift */; };
+		57D5CB8726FF97E000364AE2 /* yelpyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB8626FF97E000364AE2 /* yelpyUITests.swift */; };
+		57D5CB9526FF985900364AE2 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB9426FF985900364AE2 /* RestaurantsViewController.swift */; };
+		57D5CB9726FF98A400364AE2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB9626FF98A400364AE2 /* API.swift */; };
+		57D5CB9A26FF997800364AE2 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 57D5CB9926FF997800364AE2 /* AlamofireImage */; };
+		57D5CB9C26FF9BC200364AE2 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB9B26FF9BC200364AE2 /* RestaurantCell.swift */; };
+		57D5CB9E26FF9D3400364AE2 /* exampleAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 57D5CB9D26FF9D3400364AE2 /* exampleAPI.json */; };
+		57D5CBA026FFCFC700364AE2 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB9F26FFCFC700364AE2 /* Restaurant.swift */; };
+		B139DE8266BA8CCBD8B49ACF /* Pods_yelpy_yelpyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E0AE6E1A380279D0F566A5 /* Pods_yelpy_yelpyUITests.framework */; };
+		E37A50B695B6055B4F374563 /* Pods_yelpy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC04172E6490A64E8F882A3E /* Pods_yelpy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57D5CB7826FF97E000364AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57D5CB5926FF97DF00364AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D5CB6026FF97DF00364AE2;
+			remoteInfo = yelpy;
+		};
+		57D5CB8326FF97E000364AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57D5CB5926FF97DF00364AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D5CB6026FF97DF00364AE2;
+			remoteInfo = yelpy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E99DDCBB278E91022D63FF /* Pods-yelpyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpyTests.debug.xcconfig"; path = "Target Support Files/Pods-yelpyTests/Pods-yelpyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		14FBE38EEE89BC8A98FB7AC7 /* Pods-yelpy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpy.release.xcconfig"; path = "Target Support Files/Pods-yelpy/Pods-yelpy.release.xcconfig"; sourceTree = "<group>"; };
+		233CEC804D8C86F95A190141 /* Pods-yelpyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpyTests.release.xcconfig"; path = "Target Support Files/Pods-yelpyTests/Pods-yelpyTests.release.xcconfig"; sourceTree = "<group>"; };
+		57D5CB6126FF97DF00364AE2 /* yelpy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yelpy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D5CB6426FF97DF00364AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57D5CB6626FF97DF00364AE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		57D5CB6826FF97DF00364AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57D5CB6B26FF97DF00364AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57D5CB6D26FF97E000364AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57D5CB7026FF97E000364AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57D5CB7226FF97E000364AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D5CB7726FF97E000364AE2 /* yelpyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yelpyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D5CB7B26FF97E000364AE2 /* yelpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yelpyTests.swift; sourceTree = "<group>"; };
+		57D5CB7D26FF97E000364AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D5CB8226FF97E000364AE2 /* yelpyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yelpyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D5CB8626FF97E000364AE2 /* yelpyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yelpyUITests.swift; sourceTree = "<group>"; };
+		57D5CB8826FF97E000364AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D5CB9426FF985900364AE2 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
+		57D5CB9626FF98A400364AE2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		57D5CB9B26FF9BC200364AE2 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		57D5CB9D26FF9D3400364AE2 /* exampleAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exampleAPI.json; path = ../../../Downloads/yelpy_starter_1/Yelpy/exampleAPI.json; sourceTree = "<group>"; };
+		57D5CB9F26FFCFC700364AE2 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		82216ADDCFF12EC9B85C7623 /* Pods_yelpyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yelpyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A137FF6FF08AF768AE5AA645 /* Pods-yelpy-yelpyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpy-yelpyUITests.release.xcconfig"; path = "Target Support Files/Pods-yelpy-yelpyUITests/Pods-yelpy-yelpyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A91FC3D53ADF9F8572BBF83C /* Pods-yelpy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpy.debug.xcconfig"; path = "Target Support Files/Pods-yelpy/Pods-yelpy.debug.xcconfig"; sourceTree = "<group>"; };
+		B7E0AE6E1A380279D0F566A5 /* Pods_yelpy_yelpyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yelpy_yelpyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC04172E6490A64E8F882A3E /* Pods_yelpy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yelpy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A797D65C67C426A3CC9BA5 /* Pods-yelpy-yelpyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpy-yelpyUITests.debug.xcconfig"; path = "Target Support Files/Pods-yelpy-yelpyUITests/Pods-yelpy-yelpyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57D5CB5E26FF97DF00364AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D5CB9A26FF997800364AE2 /* AlamofireImage in Frameworks */,
+				E37A50B695B6055B4F374563 /* Pods_yelpy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D5CB7426FF97E000364AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4628BFD9869E73839284C5 /* Pods_yelpyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D5CB7F26FF97E000364AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B139DE8266BA8CCBD8B49ACF /* Pods_yelpy_yelpyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		243F7990EF2A2B70A69A5B26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC04172E6490A64E8F882A3E /* Pods_yelpy.framework */,
+				B7E0AE6E1A380279D0F566A5 /* Pods_yelpy_yelpyUITests.framework */,
+				82216ADDCFF12EC9B85C7623 /* Pods_yelpyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57D5CB5826FF97DF00364AE2 = {
+			isa = PBXGroup;
+			children = (
+				57D5CB6326FF97DF00364AE2 /* yelpy */,
+				57D5CB7A26FF97E000364AE2 /* yelpyTests */,
+				57D5CB8526FF97E000364AE2 /* yelpyUITests */,
+				57D5CB6226FF97DF00364AE2 /* Products */,
+				8C4AE52B146DB6874527F5B3 /* Pods */,
+				243F7990EF2A2B70A69A5B26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57D5CB6226FF97DF00364AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57D5CB6126FF97DF00364AE2 /* yelpy.app */,
+				57D5CB7726FF97E000364AE2 /* yelpyTests.xctest */,
+				57D5CB8226FF97E000364AE2 /* yelpyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57D5CB6326FF97DF00364AE2 /* yelpy */ = {
+			isa = PBXGroup;
+			children = (
+				57D5CB6426FF97DF00364AE2 /* AppDelegate.swift */,
+				57D5CB6626FF97DF00364AE2 /* SceneDelegate.swift */,
+				57D5CB6826FF97DF00364AE2 /* ViewController.swift */,
+				57D5CB9D26FF9D3400364AE2 /* exampleAPI.json */,
+				57D5CB9F26FFCFC700364AE2 /* Restaurant.swift */,
+				57D5CB6A26FF97DF00364AE2 /* Main.storyboard */,
+				57D5CB6D26FF97E000364AE2 /* Assets.xcassets */,
+				57D5CB9426FF985900364AE2 /* RestaurantsViewController.swift */,
+				57D5CB6F26FF97E000364AE2 /* LaunchScreen.storyboard */,
+				57D5CB7226FF97E000364AE2 /* Info.plist */,
+				57D5CB9626FF98A400364AE2 /* API.swift */,
+				57D5CB9B26FF9BC200364AE2 /* RestaurantCell.swift */,
+			);
+			path = yelpy;
+			sourceTree = "<group>";
+		};
+		57D5CB7A26FF97E000364AE2 /* yelpyTests */ = {
+			isa = PBXGroup;
+			children = (
+				57D5CB7B26FF97E000364AE2 /* yelpyTests.swift */,
+				57D5CB7D26FF97E000364AE2 /* Info.plist */,
+			);
+			path = yelpyTests;
+			sourceTree = "<group>";
+		};
+		57D5CB8526FF97E000364AE2 /* yelpyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57D5CB8626FF97E000364AE2 /* yelpyUITests.swift */,
+				57D5CB8826FF97E000364AE2 /* Info.plist */,
+			);
+			path = yelpyUITests;
+			sourceTree = "<group>";
+		};
+		8C4AE52B146DB6874527F5B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A91FC3D53ADF9F8572BBF83C /* Pods-yelpy.debug.xcconfig */,
+				14FBE38EEE89BC8A98FB7AC7 /* Pods-yelpy.release.xcconfig */,
+				E6A797D65C67C426A3CC9BA5 /* Pods-yelpy-yelpyUITests.debug.xcconfig */,
+				A137FF6FF08AF768AE5AA645 /* Pods-yelpy-yelpyUITests.release.xcconfig */,
+				01E99DDCBB278E91022D63FF /* Pods-yelpyTests.debug.xcconfig */,
+				233CEC804D8C86F95A190141 /* Pods-yelpyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57D5CB6026FF97DF00364AE2 /* yelpy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D5CB8B26FF97E000364AE2 /* Build configuration list for PBXNativeTarget "yelpy" */;
+			buildPhases = (
+				B50C647C25EA7AB9014A2A23 /* [CP] Check Pods Manifest.lock */,
+				57D5CB5D26FF97DF00364AE2 /* Sources */,
+				57D5CB5E26FF97DF00364AE2 /* Frameworks */,
+				57D5CB5F26FF97DF00364AE2 /* Resources */,
+				BD756DC8B264A4D679A07AD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yelpy;
+			packageProductDependencies = (
+				57D5CB9926FF997800364AE2 /* AlamofireImage */,
+			);
+			productName = yelpy;
+			productReference = 57D5CB6126FF97DF00364AE2 /* yelpy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57D5CB7626FF97E000364AE2 /* yelpyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D5CB8E26FF97E000364AE2 /* Build configuration list for PBXNativeTarget "yelpyTests" */;
+			buildPhases = (
+				24B855001D5AF6676B0823A6 /* [CP] Check Pods Manifest.lock */,
+				57D5CB7326FF97E000364AE2 /* Sources */,
+				57D5CB7426FF97E000364AE2 /* Frameworks */,
+				57D5CB7526FF97E000364AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57D5CB7926FF97E000364AE2 /* PBXTargetDependency */,
+			);
+			name = yelpyTests;
+			productName = yelpyTests;
+			productReference = 57D5CB7726FF97E000364AE2 /* yelpyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57D5CB8126FF97E000364AE2 /* yelpyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D5CB9126FF97E000364AE2 /* Build configuration list for PBXNativeTarget "yelpyUITests" */;
+			buildPhases = (
+				B49A040828B8C41C23836BD4 /* [CP] Check Pods Manifest.lock */,
+				57D5CB7E26FF97E000364AE2 /* Sources */,
+				57D5CB7F26FF97E000364AE2 /* Frameworks */,
+				57D5CB8026FF97E000364AE2 /* Resources */,
+				C3ABEF75848A0E454A52E773 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57D5CB8426FF97E000364AE2 /* PBXTargetDependency */,
+			);
+			name = yelpyUITests;
+			productName = yelpyUITests;
+			productReference = 57D5CB8226FF97E000364AE2 /* yelpyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57D5CB5926FF97DF00364AE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Selyn Ung";
+				TargetAttributes = {
+					57D5CB6026FF97DF00364AE2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					57D5CB7626FF97E000364AE2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 57D5CB6026FF97DF00364AE2;
+					};
+					57D5CB8126FF97E000364AE2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 57D5CB6026FF97DF00364AE2;
+					};
+				};
+			};
+			buildConfigurationList = 57D5CB5C26FF97DF00364AE2 /* Build configuration list for PBXProject "yelpy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57D5CB5826FF97DF00364AE2;
+			packageReferences = (
+				57D5CB9826FF997800364AE2 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = 57D5CB6226FF97DF00364AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57D5CB6026FF97DF00364AE2 /* yelpy */,
+				57D5CB7626FF97E000364AE2 /* yelpyTests */,
+				57D5CB8126FF97E000364AE2 /* yelpyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57D5CB5F26FF97DF00364AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D5CB7126FF97E000364AE2 /* LaunchScreen.storyboard in Resources */,
+				57D5CB9E26FF9D3400364AE2 /* exampleAPI.json in Resources */,
+				57D5CB6E26FF97E000364AE2 /* Assets.xcassets in Resources */,
+				57D5CB6C26FF97DF00364AE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D5CB7526FF97E000364AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D5CB8026FF97E000364AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24B855001D5AF6676B0823A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yelpyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B49A040828B8C41C23836BD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yelpy-yelpyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B50C647C25EA7AB9014A2A23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yelpy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD756DC8B264A4D679A07AD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yelpy/Pods-yelpy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yelpy/Pods-yelpy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yelpy/Pods-yelpy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3ABEF75848A0E454A52E773 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yelpy-yelpyUITests/Pods-yelpy-yelpyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yelpy-yelpyUITests/Pods-yelpy-yelpyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yelpy-yelpyUITests/Pods-yelpy-yelpyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57D5CB5D26FF97DF00364AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D5CB9C26FF9BC200364AE2 /* RestaurantCell.swift in Sources */,
+				57D5CB6926FF97DF00364AE2 /* ViewController.swift in Sources */,
+				57D5CB9526FF985900364AE2 /* RestaurantsViewController.swift in Sources */,
+				57D5CBA026FFCFC700364AE2 /* Restaurant.swift in Sources */,
+				57D5CB6526FF97DF00364AE2 /* AppDelegate.swift in Sources */,
+				57D5CB6726FF97DF00364AE2 /* SceneDelegate.swift in Sources */,
+				57D5CB9726FF98A400364AE2 /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D5CB7326FF97E000364AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D5CB7C26FF97E000364AE2 /* yelpyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D5CB7E26FF97E000364AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D5CB8726FF97E000364AE2 /* yelpyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57D5CB7926FF97E000364AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D5CB6026FF97DF00364AE2 /* yelpy */;
+			targetProxy = 57D5CB7826FF97E000364AE2 /* PBXContainerItemProxy */;
+		};
+		57D5CB8426FF97E000364AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D5CB6026FF97DF00364AE2 /* yelpy */;
+			targetProxy = 57D5CB8326FF97E000364AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57D5CB6A26FF97DF00364AE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57D5CB6B26FF97DF00364AE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57D5CB6F26FF97E000364AE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57D5CB7026FF97E000364AE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57D5CB8926FF97E000364AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57D5CB8A26FF97E000364AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57D5CB8C26FF97E000364AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91FC3D53ADF9F8572BBF83C /* Pods-yelpy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = yelpy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = selynung.yelpy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57D5CB8D26FF97E000364AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FBE38EEE89BC8A98FB7AC7 /* Pods-yelpy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = yelpy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = selynung.yelpy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57D5CB8F26FF97E000364AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E99DDCBB278E91022D63FF /* Pods-yelpyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = yelpyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = selynung.yelpyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yelpy.app/yelpy";
+			};
+			name = Debug;
+		};
+		57D5CB9026FF97E000364AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233CEC804D8C86F95A190141 /* Pods-yelpyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = yelpyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = selynung.yelpyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yelpy.app/yelpy";
+			};
+			name = Release;
+		};
+		57D5CB9226FF97E000364AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A797D65C67C426A3CC9BA5 /* Pods-yelpy-yelpyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = yelpyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = selynung.yelpyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yelpy;
+			};
+			name = Debug;
+		};
+		57D5CB9326FF97E000364AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A137FF6FF08AF768AE5AA645 /* Pods-yelpy-yelpyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = yelpyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = selynung.yelpyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yelpy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57D5CB5C26FF97DF00364AE2 /* Build configuration list for PBXProject "yelpy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D5CB8926FF97E000364AE2 /* Debug */,
+				57D5CB8A26FF97E000364AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D5CB8B26FF97E000364AE2 /* Build configuration list for PBXNativeTarget "yelpy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D5CB8C26FF97E000364AE2 /* Debug */,
+				57D5CB8D26FF97E000364AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D5CB8E26FF97E000364AE2 /* Build configuration list for PBXNativeTarget "yelpyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D5CB8F26FF97E000364AE2 /* Debug */,
+				57D5CB9026FF97E000364AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D5CB9126FF97E000364AE2 /* Build configuration list for PBXNativeTarget "yelpyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D5CB9226FF97E000364AE2 /* Debug */,
+				57D5CB9326FF97E000364AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57D5CB9826FF997800364AE2 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57D5CB9926FF997800364AE2 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57D5CB9826FF997800364AE2 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 57D5CB5926FF97DF00364AE2 /* Project object */;
+}
