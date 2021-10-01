@@ -10,7 +10,6 @@
 		2E4628BFD9869E73839284C5 /* Pods_yelpyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82216ADDCFF12EC9B85C7623 /* Pods_yelpyTests.framework */; };
 		571190DC2703EF6D00FF9622 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571190DB2703EF6D00FF9622 /* RestaurantDetailViewController.swift */; };
 		571190DE2703EFBE00FF9622 /* YelpStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571190DD2703EFBE00FF9622 /* YelpStars.swift */; };
-		571190E02703F23200FF9622 /* exampleAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 571190DF2703F23200FF9622 /* exampleAPI.json */; };
 		57D5CB6526FF97DF00364AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB6426FF97DF00364AE2 /* AppDelegate.swift */; };
 		57D5CB6726FF97DF00364AE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB6626FF97DF00364AE2 /* SceneDelegate.swift */; };
 		57D5CB6926FF97DF00364AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB6826FF97DF00364AE2 /* ViewController.swift */; };
@@ -24,7 +23,6 @@
 		57D5CB9A26FF997800364AE2 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 57D5CB9926FF997800364AE2 /* AlamofireImage */; };
 		57D5CB9C26FF9BC200364AE2 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB9B26FF9BC200364AE2 /* RestaurantCell.swift */; };
 		57D5CBA026FFCFC700364AE2 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CB9F26FFCFC700364AE2 /* Restaurant.swift */; };
-		57D5CBA226FFEA5700364AE2 /* YelpStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D5CBA126FFEA5700364AE2 /* YelpStars.swift */; };
 		B139DE8266BA8CCBD8B49ACF /* Pods_yelpy_yelpyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E0AE6E1A380279D0F566A5 /* Pods_yelpy_yelpyUITests.framework */; };
 		E37A50B695B6055B4F374563 /* Pods_yelpy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC04172E6490A64E8F882A3E /* Pods_yelpy.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +50,6 @@
 		233CEC804D8C86F95A190141 /* Pods-yelpyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpyTests.release.xcconfig"; path = "Target Support Files/Pods-yelpyTests/Pods-yelpyTests.release.xcconfig"; sourceTree = "<group>"; };
 		571190DB2703EF6D00FF9622 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		571190DD2703EFBE00FF9622 /* YelpStars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YelpStars.swift; path = ../../../Downloads/YelpStars.swift; sourceTree = "<group>"; };
-		571190DF2703F23200FF9622 /* exampleAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = exampleAPI.json; path = ../../../Downloads/yelpy_starter_2/Yelpy/exampleAPI.json; sourceTree = "<group>"; };
 		57D5CB6126FF97DF00364AE2 /* yelpy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yelpy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D5CB6426FF97DF00364AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D5CB6626FF97DF00364AE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		57D5CB9626FF98A400364AE2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		57D5CB9B26FF9BC200364AE2 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		57D5CB9F26FFCFC700364AE2 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		57D5CBA126FFEA5700364AE2 /* YelpStars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YelpStars.swift; path = ../../../Downloads/YelpStars.swift; sourceTree = "<group>"; };
 		82216ADDCFF12EC9B85C7623 /* Pods_yelpyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yelpyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A137FF6FF08AF768AE5AA645 /* Pods-yelpy-yelpyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpy-yelpyUITests.release.xcconfig"; path = "Target Support Files/Pods-yelpy-yelpyUITests/Pods-yelpy-yelpyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A91FC3D53ADF9F8572BBF83C /* Pods-yelpy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yelpy.debug.xcconfig"; path = "Target Support Files/Pods-yelpy/Pods-yelpy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,14 +146,12 @@
 				57D5CB6826FF97DF00364AE2 /* ViewController.swift */,
 				57D5CB9F26FFCFC700364AE2 /* Restaurant.swift */,
 				57D5CB6A26FF97DF00364AE2 /* Main.storyboard */,
-				571190DF2703F23200FF9622 /* exampleAPI.json */,
 				57D5CB6D26FF97E000364AE2 /* Assets.xcassets */,
 				57D5CB9426FF985900364AE2 /* RestaurantsViewController.swift */,
 				57D5CB6F26FF97E000364AE2 /* LaunchScreen.storyboard */,
 				57D5CB7226FF97E000364AE2 /* Info.plist */,
 				57D5CB9626FF98A400364AE2 /* API.swift */,
 				57D5CB9B26FF9BC200364AE2 /* RestaurantCell.swift */,
-				57D5CBA126FFEA5700364AE2 /* YelpStars.swift */,
 				571190DB2703EF6D00FF9622 /* RestaurantDetailViewController.swift */,
 			);
 			path = yelpy;
@@ -310,7 +304,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D5CB7126FF97E000364AE2 /* LaunchScreen.storyboard in Resources */,
-				571190E02703F23200FF9622 /* exampleAPI.json in Resources */,
 				57D5CB6E26FF97E000364AE2 /* Assets.xcassets in Resources */,
 				57D5CB6C26FF97DF00364AE2 /* Main.storyboard in Resources */,
 			);
@@ -441,7 +434,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D5CB9C26FF9BC200364AE2 /* RestaurantCell.swift in Sources */,
-				57D5CBA226FFEA5700364AE2 /* YelpStars.swift in Sources */,
 				57D5CB6926FF97DF00364AE2 /* ViewController.swift in Sources */,
 				57D5CB9526FF985900364AE2 /* RestaurantsViewController.swift in Sources */,
 				57D5CBA026FFCFC700364AE2 /* Restaurant.swift in Sources */,

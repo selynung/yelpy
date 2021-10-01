@@ -22,6 +22,9 @@ class RestaurantDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         restaurantImage.af.setImage(withURL: r.imageURL!)
+        restaurantLabel.text = r.name
+        ratingImage.image = Stars.dict[r.rating]!
+        reviewLabel.text = String(r.reviews)
     }
     
 
